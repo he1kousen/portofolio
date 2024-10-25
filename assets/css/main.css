@@ -857,56 +857,52 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Skills Section
 --------------------------------------------------------------*/
-.services .service-item {
+.skills .skill-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 30px;
+  padding: 40px 20px; /* Mengurangi padding */
   transition: all ease-in-out 0.3s;
   border-radius: 18px;
   border-bottom: 5px solid var(--surface-color);
   height: 100%;
 }
 
-.services .service-item .icon {
+.skills .skill-item .icon {
   color: var(--contrast-color);
   background: var(--accent-color);
-  margin: 0;
+  margin: 0 auto; /* Agar logo berada di tengah */
   width: 64px;
   height: 64px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item h3 {
+.skills .skill-item h3 {
   font-weight: 700;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
+  margin: 10px auto; /* Agar teks berada di tengah */
+  font-size: 20px; /* Mengurangi ukuran teks */
+  text-align: center;
   transition: ease-in-out 0.3s;
 }
 
-.services .service-item p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
 @media (min-width: 1365px) {
-  .services .service-item:hover {
+  .skills .skill-item:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
   }
 
-  .services .service-item:hover h3 {
+  .skills .skill-item:hover h3 {
     color: var(--accent-color);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Stats Section
